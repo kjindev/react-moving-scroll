@@ -1,12 +1,12 @@
-import { useScrollRef } from "./moving";
+import { useScroll } from "./module";
 
 export default function Function() {
-  const { handleScrollView, ref } = useScrollRef();
+  const { handleScroll, ref } = useScroll();
   const list = ["name1", "name2", "name3"];
 
   return (
     <>
-      <div onClick={(event) => handleScrollView(event, list)}>
+      <div onClick={(event) => handleScroll(event, list)}>
         {list.map((value: string, index: number) => (
           <div key={index}>{value}</div>
         ))}
