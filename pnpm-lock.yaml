@@ -35,9 +35,6 @@ importers:
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
-      scroll-moving:
-        specifier: workspace:^
-        version: link:../lib
     devDependencies:
       '@next/eslint-plugin-next':
         specifier: ^14.0.4
@@ -60,9 +57,18 @@ importers:
       '@types/react-dom':
         specifier: ^18.2.18
         version: 18.2.18
+      autoprefixer:
+        specifier: ^10.0.1
+        version: 10.4.16(postcss@8.4.31)
       eslint:
         specifier: ^8.56.0
         version: 8.56.0
+      postcss:
+        specifier: ^8
+        version: 8.4.31
+      tailwindcss:
+        specifier: ^3.3.0
+        version: 3.4.1
       typescript:
         specifier: ^5.3.3
         version: 5.3.3
@@ -6135,8 +6141,8 @@ packages:
     peerDependencies:
       postcss: ^8.1.0
     dependencies:
-      browserslist: 4.22.1
-      caniuse-lite: 1.0.30001563
+      browserslist: 4.22.2
+      caniuse-lite: 1.0.30001576
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -6695,8 +6701,8 @@ packages:
   /caniuse-api@3.0.0:
     resolution: {integrity: sha512-bsTwuIg/BZZK/vreVTYYbSWoe2F+71P7K5QGEX+pT250DZbfU1MQ5prOKpPR+LL6uWKK3KMwMCAS74QB3Um1uw==}
     dependencies:
-      browserslist: 4.22.1
-      caniuse-lite: 1.0.30001563
+      browserslist: 4.22.2
+      caniuse-lite: 1.0.30001576
       lodash.memoize: 4.1.2
       lodash.uniq: 4.5.0
     dev: true
@@ -12896,7 +12902,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      browserslist: 4.22.1
+      browserslist: 4.22.2
       caniuse-api: 3.0.0
       colord: 2.9.3
       postcss: 8.4.31
@@ -12909,7 +12915,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      browserslist: 4.22.1
+      browserslist: 4.22.2
       postcss: 8.4.31
       postcss-value-parser: 4.2.0
     dev: true
@@ -13189,7 +13195,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      browserslist: 4.22.1
+      browserslist: 4.22.2
       caniuse-api: 3.0.0
       cssnano-utils: 3.1.0(postcss@8.4.31)
       postcss: 8.4.31
@@ -13224,7 +13230,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      browserslist: 4.22.1
+      browserslist: 4.22.2
       cssnano-utils: 3.1.0(postcss@8.4.31)
       postcss: 8.4.31
       postcss-value-parser: 4.2.0
@@ -13367,7 +13373,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      browserslist: 4.22.1
+      browserslist: 4.22.2
       postcss: 8.4.31
       postcss-value-parser: 4.2.0
     dev: true
@@ -13529,7 +13535,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      browserslist: 4.22.1
+      browserslist: 4.22.2
       caniuse-api: 3.0.0
       postcss: 8.4.31
     dev: true
@@ -14545,6 +14551,7 @@ packages:
 
   /resolve@2.0.0-next.5:
     resolution: {integrity: sha512-U7WjGVG9sH8tvjW5SmGbQuui75FiyjAX72HX15DwBBwF9dNiQZRQAg9nnPhYy+TUnE0+VcrttuvNI8oSxZcocA==}
+    hasBin: true
     dependencies:
       is-core-module: 2.13.1
       path-parse: 1.0.7
@@ -15424,7 +15431,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      browserslist: 4.22.1
+      browserslist: 4.22.2
       postcss: 8.4.31
       postcss-selector-parser: 6.0.15
     dev: true
@@ -16736,7 +16743,7 @@ packages:
       '@webassemblyjs/wasm-parser': 1.11.6
       acorn: 8.10.0
       acorn-import-assertions: 1.9.0(acorn@8.10.0)
-      browserslist: 4.22.1
+      browserslist: 4.22.2
       chrome-trace-event: 1.0.3
       enhanced-resolve: 5.15.0
       es-module-lexer: 1.4.1
