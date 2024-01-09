@@ -42,5 +42,4 @@ export const Button = ({ type, size, Destructive, children }: Props) => {
       )}
     </div>
   );
-  // }
 };
