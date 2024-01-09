@@ -13,12 +13,21 @@ export const Alert = ({ type, withButton, children }: Props) => {
   const color = (type: string) => {
     if (type === "Default") return "bg-sub-2 text-main";
     else if (type === "Error") return "bg-red-1 text-red-2";
+    else return "";
+  };
+
+  const iconColor = (type: string) => {
+    if (type === "Default") return "fill-main";
+    else if (type === "Error") return "fill-red-2";
+    else return "";
   };
 
   return (
     <div className={`${defaultStyle} ${color(type)}`}>
       {children}
-      {withButton && <AddCircle width="15" height="15" fill="fill-red-2" />}
+      {withButton && (
+        <AddCircle width="15" height="15" fill={iconColor(type)} />
+      )}
     </div>
   );
 };
