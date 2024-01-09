@@ -1,3 +1,4 @@
+import React from "react";
 import { useScroll } from "./module";
 
 export default function Function() {
@@ -5,7 +6,7 @@ export default function Function() {
   const list = ["name1", "name2", "name3"];
 
   return (
-    <>
+    <div>
       <div onClick={(event) => handleScroll(event, list)}>
         {list.map((value: string, index: number) => (
           <div key={index}>{value}</div>
@@ -46,6 +47,6 @@ export default function Function() {
           it's three
         </div>
       </div>
-    </>
+    </div>
   );
 }
