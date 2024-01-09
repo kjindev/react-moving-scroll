@@ -32,13 +32,14 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
+    type: "Default",
     children: "This is information alert.",
   },
 };
 
 export const Error: Story = {
   args: {
-    children: "This is error alert.",
     type: "Error",
+    children: "This is error alert.",
   },
 };
