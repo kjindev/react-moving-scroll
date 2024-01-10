@@ -1,8 +1,9 @@
 "use client";
 
-import { Button } from "@repo/ui/button";
+import { MouseEvent, ReactNode } from "react";
 import { robotoBold } from "../../../util/font";
 import { useScroll } from "scroll-moving";
+import Link from "next/link";
 
 export default function Introduction() {
   return (
@@ -30,7 +31,10 @@ function Intro1() {
         ref={ref(0)}
         className="w-full h-[100vh] flex flex-col justify-center items-center"
       >
-        Like This, You can scroll smooth as you wanna go.
+        <div className={`${robotoBold.className} text-5xl mb-8 text-center`}>
+          You can scroll smooth,
+          <br /> anywhere you wanna go.
+        </div>
         <Button onClick={(event) => handleScroll(event, list)}>
           Learn More?
         </Button>
@@ -39,8 +43,30 @@ function Intro1() {
         ref={ref(1)}
         className="w-full h-[100vh] flex flex-col justify-center items-center"
       >
-        Good. Let's Check Documents Page!
+        <div className={`${robotoBold.className} text-5xl mb-8 text-center`}>
+          Let's Check Document!
+        </div>
+        <Link href="/doc">
+          <Button>Doc</Button>
+        </Link>
       </div>
     </>
+  );
+}
+
+function Button({
+  children,
+  onClick,
+}: {
+  children: ReactNode;
+  onClick?: (event: MouseEvent<HTMLElement>) => void;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className="bg-sky-600 text-white text-sm px-3 py-2 rounded-xl hover:scale-105"
+    >
+      {children}
+    </button>
   );
 }
