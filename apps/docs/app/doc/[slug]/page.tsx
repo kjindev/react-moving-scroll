@@ -38,10 +38,10 @@ export default function Page() {
   };
 
   return (
-    <div className="w-[1000px] pt-[60px] pl-[270px]">
-      <div className="px-10 py-9">
-        <div className="text-sm">{category(slug as string)}</div>
-        <div className={`${robotoBold.className} text-4xl`}>
+    <div className="w-full pc:w-[1000px] pt-[120px] tab:pt-[60px] tab:pl-[270px]">
+      <div className="px-8 py-7 tab:px-10 tab:py-9">
+        <div className="text-xs tab:text-sm">{category(slug as string)}</div>
+        <div className={`${robotoBold.className} text-3xl tab:text-4xl`}>
           {title(slug as string)}
         </div>
         <div>{content(slug as string)}</div>

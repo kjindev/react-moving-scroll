@@ -20,7 +20,9 @@ function Intro1() {
   return (
     <>
       <div className="w-full h-[100vh] flex flex-col justify-center items-center">
-        <div className={`${robotoBold.className} text-6xl text-center mb-8`}>
+        <div
+          className={`${robotoBold.className} text-4xl tab:text-5xl pc:text-6xl text-center mb-8 p-5`}
+        >
           Basic Scroll,
           <br /> Scrolling Hook for React.
         </div>
@@ -32,7 +34,9 @@ function Intro1() {
         ref={ref(0)}
         className="w-full h-[100vh] flex flex-col justify-center items-center"
       >
-        <div className={`${robotoBold.className} text-6xl mb-8 text-center`}>
+        <div
+          className={`${robotoBold.className} text-4xl tab:text-5xl pc:text-6xl mb-8 p-5 text-center`}
+        >
           You can scroll on smoothly,
           <br /> anywhere you wanna go.
         </div>
@@ -44,7 +48,9 @@ function Intro1() {
         ref={ref(1)}
         className="w-full h-[100vh] flex flex-col justify-center items-center"
       >
-        <div className={`${robotoBold.className} text-6xl mb-8 text-center`}>
+        <div
+          className={`${robotoBold.className} text-4xl tab:text-5xl pc:text-6xl mb-8 p-5 text-center`}
+        >
           You like it?
           <br />
           Let's get started.
@@ -67,7 +73,7 @@ function Button({
   return (
     <button
       onClick={onClick}
-      className="bg-zinc-800 text-white text-sm px-3 py-2 rounded hover:bg-green-600 transition-colors"
+      className="bg-zinc-800 text-white text-xs tab:text-sm px-3 py-2 rounded hover:bg-green-600 transition-colors"
     >
       {children}
     </button>

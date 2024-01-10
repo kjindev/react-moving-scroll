@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function GettingStarted() {
   return (
-    <div className="pt-6">
+    <div className="w-full pt-6">
       <div className="py-3">
         <div className={`${robotoBold.className} text-lg`}>
           ✅ What is Basic Scroll?

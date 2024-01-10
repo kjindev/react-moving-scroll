@@ -1,13 +1,12 @@
 import Link from "next/link";
-import React from "react";
 
-export default function SideMenu() {
+export default function MobileMenu() {
   const title = "font-bold mt-2";
-  const content =
-    "pl-2 text-sm my-1 py-1 hover:text-green-600 hover:cursor-pointer";
+  const content = "pl-2 my-1 py-1 hover:cursor-pointer";
+
   return (
-    <div className="hidden tab:inline-block pt-[60px] w-[270px] h-[100vh] fixed bg-white border-r">
-      <div className="px-5 py-4">
+    <div className="bg-zinc-100 w-full h-screen fixed pt-[120px] text-sm">
+      <div className="px-8 py-6">
         <div className={title}>Introduction</div>
         <Link href="/doc/getting-started">
           <div className={content}>Getting Started</div>
