@@ -70,7 +70,7 @@ export default function QuickStart() {
             <div className="w-[40%]">number</div>
             <div className="w-[40%] text-start">
               The ref would determine where scroll go. You can put index on ref
-              on html tag, like div or something.
+              on html tag, like {`<div>`} or something.
             </div>
           </div>
         </div>
