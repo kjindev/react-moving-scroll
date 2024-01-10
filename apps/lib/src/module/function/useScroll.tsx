@@ -1,6 +1,6 @@
 import { RefCallback, useRef } from "react";
 
-export const useScrollRef = () => {
+export default function useScroll() {
   const scrollRef = useRef<HTMLElement[]>([]);
 
   const ref = (i: number): RefCallback<HTMLElement> => {
@@ -11,7 +11,7 @@ export const useScrollRef = () => {
     };
   };
 
-  const handleScrollView = (
+  const handleScroll = (
     event: React.MouseEvent<HTMLElement>,
     list: string[]
   ) => {
@@ -24,5 +24,5 @@ export const useScrollRef = () => {
     scrollRef.current[category[name]]?.scrollIntoView({ behavior: "smooth" });
   };
 
-  return { scrollRef, ref, handleScrollView };
-};
+  return { ref, handleScroll };
+}
