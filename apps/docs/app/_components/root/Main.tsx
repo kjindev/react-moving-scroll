@@ -67,7 +67,7 @@ function Button({
   return (
     <button
       onClick={onClick}
-      className="bg-zinc-800 text-white text-sm px-3 py-2 rounded hover:bg-zinc-500"
+      className="bg-zinc-800 text-white text-sm px-3 py-2 rounded hover:bg-green-600 transition-colors"
     >
       {children}
     </button>

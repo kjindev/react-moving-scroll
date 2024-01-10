@@ -17,10 +17,13 @@ export default function NavBar() {
           Basic Scroll
         </Link>
         <div className="text-sm">
-          <Link href="/doc/getting-started" className="px-2 mx-1">
+          <Link
+            href="/doc/getting-started"
+            className="px-2 mx-1 hover:text-green-600"
+          >
             Doc
           </Link>
-          <a href="/" className="px-2 mx-1">
+          <a href="/" className="px-2 mx-1 hover:text-green-600">
             Github
           </a>
         </div>
