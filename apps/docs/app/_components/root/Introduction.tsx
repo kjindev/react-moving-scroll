@@ -46,7 +46,7 @@ function Intro1() {
         <div className={`${robotoBold.className} text-5xl mb-8 text-center`}>
           Let's Check Document!
         </div>
-        <Link href="/doc">
+        <Link href="/doc/intallation">
           <Button>Get Started</Button>
         </Link>
       </div>
