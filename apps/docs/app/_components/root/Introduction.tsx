@@ -47,7 +47,7 @@ function Intro1() {
           Let's Check Document!
         </div>
         <Link href="/doc">
-          <Button>Doc</Button>
+          <Button>Get Started</Button>
         </Link>
       </div>
     </>
