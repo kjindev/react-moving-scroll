@@ -3,6 +3,7 @@
 import { useParams } from "next/navigation";
 import { robotoBold } from "../../../util/font";
 import GettingStarted from "../../_components/doc/GettingStarted";
+import QuickStart from "../../_components/doc/QuickStart";
 
 export default function Page() {
   const { slug } = useParams();
@@ -27,7 +28,7 @@ export default function Page() {
     if (slug === "getting-started") {
       return <GettingStarted />;
     } else if (slug === "quick-start") {
-      return;
+      return <QuickStart />;
     }
   };
   return (
