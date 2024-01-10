@@ -25,6 +25,18 @@ export default function CodeBox() {
         <code className="text-purple-400">{`()`}</code>
         <code className="text-cyan-300">{`;`}</code>
         <div></div>
+        <code className="text-purple-400">{`  const `}</code>
+        <code className="text-red-400">{` list `}</code>
+        <code className="text-purple-400">{` = [`}</code>
+        <code className="text-cyan-300">{`"`}</code>
+        <code className="text-lime-400">{`Click Me 1`}</code>
+        <code className="text-cyan-300">{`", `}</code>
+        <code className="text-cyan-300">{`"`}</code>
+        <code className="text-lime-400">{`Click Me 2`}</code>
+        <code className="text-cyan-300">{`" `}</code>
+        <code className="text-purple-400">{`]`}</code>
+        <code className="text-cyan-300">{`;`}</code>
+        <div></div>
         <code className="text-cyan-300">{`    return `}</code>
         <code className="text-purple-300">{`(`}</code>
         <div></div>
@@ -50,7 +62,7 @@ export default function CodeBox() {
         <code className="text-blue-300">{`}`}</code>
         <code className="text-cyan-300">{`>`}</code>
         <code>{`Click Me 1`}</code>
-        <code className="text-cyan-300">{`<`}</code>
+        <code className="text-cyan-300">{`</`}</code>
         <code className="text-red-400">{`button`}</code>
         <code className="text-cyan-300">{`>`}</code>
 
@@ -73,7 +85,7 @@ export default function CodeBox() {
         <code className="text-blue-300">{`}`}</code>
         <code className="text-cyan-300">{`>`}</code>
         <code>{`Click Me 2`}</code>
-        <code className="text-cyan-300">{`<`}</code>
+        <code className="text-cyan-300">{`</`}</code>
         <code className="text-red-400">{`button`}</code>
         <code className="text-cyan-300">{`>`}</code>
 
@@ -101,7 +113,7 @@ export default function CodeBox() {
 
         <code className="text-cyan-300">{`>`}</code>
         <code>{`Content 1`}</code>
-        <code className="text-cyan-300">{`<`}</code>
+        <code className="text-cyan-300">{`</`}</code>
         <code className="text-red-400">{`div`}</code>
         <code className="text-cyan-300">{`>`}</code>
 
@@ -130,7 +142,7 @@ export default function CodeBox() {
 
         <code className="text-cyan-300">{`>`}</code>
         <code>{`Content 2`}</code>
-        <code className="text-cyan-300">{`<`}</code>
+        <code className="text-cyan-300">{`</`}</code>
         <code className="text-red-400">{`div`}</code>
         <code className="text-cyan-300">{`>`}</code>
 

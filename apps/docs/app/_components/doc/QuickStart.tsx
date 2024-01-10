@@ -16,7 +16,10 @@ export default function QuickStart() {
             <span className="font-bold"> handleScroll</span> and
             <span className="font-bold"> ref.</span> The handleScroll is a
             function that provides scrolling and the ref is useRef for deciding
-            where scroll should go.
+            where scroll should go. If you clicked Click Me 1, the scroll would
+            move to Content 1. Also, if you clicked Click Me 2, the scroll would
+            move to Content 2. The string array, list, correspond to ref. The
+            list[0] correspond to ref(0), and list[1] correspond to ref(1).
           </div>
           <div className="pt-2">
             <span className="bg-zinc-200 p-1 rounded-lg mr-1">Check!</span> If
