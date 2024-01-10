@@ -1,9 +1,9 @@
-import Introduction from "./_components/root/Introduction";
+import Main from "./_components/root/Main";
 
 export default function Page() {
   return (
     <div>
-      <Introduction />
+      <Main />
     </div>
   );
 }

@@ -5,7 +5,7 @@ import { robotoBold } from "../../../util/font";
 import { useScroll } from "scroll-moving";
 import Link from "next/link";
 
-export default function Introduction() {
+export default function Main() {
   return (
     <div className="w-full">
       <Intro1 />
@@ -46,7 +46,7 @@ function Intro1() {
         <div className={`${robotoBold.className} text-5xl mb-8 text-center`}>
           Let's Check Document!
         </div>
-        <Link href="/doc/intallation">
+        <Link href="/doc/getting-started">
           <Button>Get Started</Button>
         </Link>
       </div>

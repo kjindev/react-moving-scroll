@@ -5,10 +5,17 @@ import Link from "next/link";
 
 export default function GettingStarted() {
   return (
-    <div className="pt-3">
+    <div className="pt-6">
       <div className="py-3">
         <div className={`${robotoBold.className} text-lg`}>
           ✅ What is Scroll Moving?
+        </div>
+        <div className="text-sm py-3 text-justify">
+          It's <span className="font-bold">React Hook</span> for making it easy
+          to scroll to some specific contents that you wanna go. You can use it
+          for Navigation Bar, Buttons, or anything you want, for adding smooth
+          scrolling. It would help you as it give you the efficiently function,{" "}
+          <span className="font-bold">Scroll Moving.</span>
         </div>
       </div>
       <div className="py-3">

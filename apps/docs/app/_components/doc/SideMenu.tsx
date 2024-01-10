@@ -16,6 +16,9 @@ export default function SideMenu() {
         <Link href="/doc/quick-start">
           <div className={content}>Quick Start</div>
         </Link>
+        <Link href="/doc/quick-start">
+          <div className={content}>Example</div>
+        </Link>
       </div>
     </div>
   );
