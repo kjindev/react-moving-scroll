@@ -20,8 +20,9 @@ function Intro1() {
   return (
     <>
       <div className="w-full h-[100vh] flex flex-col justify-center items-center">
-        <div className={`${robotoBold.className} text-5xl mb-8`}>
-          Scrolling Hook for React.
+        <div className={`${robotoBold.className} text-5xl text-center mb-8`}>
+          Scroll Moving,
+          <br /> Scrolling Hook for React.
         </div>
         <Button onClick={(event) => handleScroll(event, list)}>
           What is SCROLL MOVING?
@@ -32,7 +33,7 @@ function Intro1() {
         className="w-full h-[100vh] flex flex-col justify-center items-center"
       >
         <div className={`${robotoBold.className} text-5xl mb-8 text-center`}>
-          You can scroll smooth,
+          You can scroll on smoothly,
           <br /> anywhere you wanna go.
         </div>
         <Button onClick={(event) => handleScroll(event, list)}>
@@ -44,10 +45,12 @@ function Intro1() {
         className="w-full h-[100vh] flex flex-col justify-center items-center"
       >
         <div className={`${robotoBold.className} text-5xl mb-8 text-center`}>
-          Let's Check Document!
+          You like it?
+          <br />
+          Let's get started.
         </div>
         <Link href="/doc/getting-started">
-          <Button>Get Started</Button>
+          <Button>Go to Introduction Page</Button>
         </Link>
       </div>
     </>
@@ -64,7 +67,7 @@ function Button({
   return (
     <button
       onClick={onClick}
-      className="bg-sky-600 text-white text-sm px-3 py-2 rounded-xl hover:scale-105"
+      className="bg-zinc-800 text-white text-sm px-3 py-2 rounded hover:bg-zinc-500"
     >
       {children}
     </button>

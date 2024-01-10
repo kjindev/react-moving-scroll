@@ -11,26 +11,31 @@ export default function QuickStart() {
         </div>
         <div className="text-sm py-3 text-justify">
           <CodeBox />
-          <div className="py-3">
+          <div className="py-3 leading-7">
             Import<span className="font-bold"> useScroll</span> and get
             <span className="font-bold"> handleScroll</span> and
             <span className="font-bold"> ref.</span> The handleScroll is a
             function that provides scrolling and the ref is useRef for deciding
-            where scroll should go. If you clicked Click Me 1, the scroll would
-            move to Content 1. Also, if you clicked Click Me 2, the scroll would
-            move to Content 2. The string array, list, correspond to ref. The
-            list[0] correspond to ref(0), and list[1] correspond to ref(1).
+            where scroll should go. The function handleScroll would look for
+            innerText that matches the text contained in the list.
           </div>
-          <div className="pt-2">
-            <span className="bg-zinc-200 p-1 rounded-lg mr-1">Check!</span> If
-            you used Next.js App Router, you should put 'use client' for using
-            ref.
+          <div className="py-2 leading-7">
+            If you clicked <TextBox>Click Me 1</TextBox>, the scroll would move
+            to <TextBox>Content 1</TextBox>. Also, if you clicked{" "}
+            <TextBox>Click Me 2</TextBox>, the scroll would move to{" "}
+            <TextBox>Content 2</TextBox>. The string array, list, correspond to
+            ref. The list[0] correspond to ref(0), and list[1] correspond to
+            ref(1).
+          </div>
+          <div className="py-2 leading-7">
+            <span className="font-bold">Note:</span> If you used Next.js App
+            Router, you should put 'use client' for using ref.
           </div>
         </div>
       </div>
       <div className="py-3">
         <div className={`${robotoBold.className} text-lg`}>✅ handleScroll</div>
-        <div className="text-sm py-3">
+        <div className="text-sm py-3 leading-7">
           It's a function to provide smooth scrolling to specific contents. It
           has two props, <span className="font-bold">event</span> and{" "}
           <span className="font-bold">list</span>.
@@ -59,7 +64,7 @@ export default function QuickStart() {
       </div>
       <div className="py-3">
         <div className={`${robotoBold.className} text-lg`}>✅ ref</div>
-        <div className="text-sm py-3">
+        <div className="text-sm py-3 leading-7">
           It's a reference that decide where scroll would go. You can use it the
           same way that using useRef. It has one parameter,{" "}
           <span className="font-bold">index.</span>
@@ -80,4 +85,8 @@ export default function QuickStart() {
       </div>
     </div>
   );
+}
+
+function TextBox({ children }: { children: string }) {
+  return <span className="bg-zinc-200 p-1 rounded-lg text-xs">{children}</span>;
 }

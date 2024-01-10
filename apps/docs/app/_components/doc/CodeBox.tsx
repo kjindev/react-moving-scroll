@@ -24,7 +24,9 @@ export default function CodeBox() {
         <code className="text-blue-400">{` useScroll`}</code>
         <code className="text-purple-400">{`()`}</code>
         <code className="text-cyan-300">{`;`}</code>
+
         <div></div>
+
         <code className="text-purple-400">{`  const `}</code>
         <code className="text-red-400">{` list `}</code>
         <code className="text-purple-400">{` = [`}</code>
@@ -46,7 +48,7 @@ export default function CodeBox() {
         <div></div>
 
         <code className="text-cyan-300">{`           <`}</code>
-        <code className="text-red-400">{`button`}</code>
+        <code className="text-red-400">{`div`}</code>
         <code className="text-purple-400 italic">{` onClick=`}</code>
         <code className="text-blue-300">{`{`}</code>
         <code className="text-yellow-300">{`(`}</code>
@@ -60,6 +62,12 @@ export default function CodeBox() {
         <code>{`list`}</code>
         <code className="text-yellow-300">{`)`}</code>
         <code className="text-blue-300">{`}`}</code>
+        <code className="text-cyan-300">{`>`}</code>
+
+        <div></div>
+
+        <code className="text-cyan-300">{`              <`}</code>
+        <code className="text-red-400">{`button`}</code>
         <code className="text-cyan-300">{`>`}</code>
         <code>{`Click Me 1`}</code>
         <code className="text-cyan-300">{`</`}</code>
@@ -68,25 +76,17 @@ export default function CodeBox() {
 
         <div></div>
 
-        <code className="text-cyan-300">{`           <`}</code>
+        <code className="text-cyan-300">{`              <`}</code>
         <code className="text-red-400">{`button`}</code>
-        <code className="text-purple-400 italic">{` onClick=`}</code>
-        <code className="text-blue-300">{`{`}</code>
-        <code className="text-yellow-300">{`(`}</code>
-        <code className="text-red-400">{`event`}</code>
-        <code className="text-yellow-300">{`)`}</code>
-        <code className="text-purple-300">{` => `}</code>
-        <code className="text-blue-300">{`handleScroll`}</code>
-        <code className="text-yellow-300">{`(`}</code>
-        <code>{`event`}</code>
-        <code className="text-cyan-400">{`, `}</code>
-        <code>{`list`}</code>
-        <code className="text-yellow-300">{`)`}</code>
-        <code className="text-blue-300">{`}`}</code>
         <code className="text-cyan-300">{`>`}</code>
         <code>{`Click Me 2`}</code>
         <code className="text-cyan-300">{`</`}</code>
         <code className="text-red-400">{`button`}</code>
+
+        <div></div>
+
+        <code className="text-cyan-300">{`           </`}</code>
+        <code className="text-red-400">{`div`}</code>
         <code className="text-cyan-300">{`>`}</code>
 
         <div></div>
@@ -118,7 +118,6 @@ export default function CodeBox() {
         <code className="text-cyan-300">{`>`}</code>
 
         <div></div>
-        {/* <div style={{ height: "100vh" }}></div> */}
 
         <code className="text-cyan-300">{`           <`}</code>
         <code className="text-red-400">{`div`}</code>
