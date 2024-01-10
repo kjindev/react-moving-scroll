@@ -15,24 +15,24 @@ export default function Main() {
 
 function Intro1() {
   const { handleScroll, ref } = useScroll();
-  const list = ["What is SCROLL MOVING?", "Learn More?"];
+  const list = ["What is Basic Scroll?", "Learn More?"];
 
   return (
     <>
       <div className="w-full h-[100vh] flex flex-col justify-center items-center">
-        <div className={`${robotoBold.className} text-5xl text-center mb-8`}>
-          Scroll Moving,
+        <div className={`${robotoBold.className} text-6xl text-center mb-8`}>
+          Basic Scroll,
           <br /> Scrolling Hook for React.
         </div>
         <Button onClick={(event) => handleScroll(event, list)}>
-          What is SCROLL MOVING?
+          What is Basic Scroll?
         </Button>
       </div>
       <div
         ref={ref(0)}
         className="w-full h-[100vh] flex flex-col justify-center items-center"
       >
-        <div className={`${robotoBold.className} text-5xl mb-8 text-center`}>
+        <div className={`${robotoBold.className} text-6xl mb-8 text-center`}>
           You can scroll on smoothly,
           <br /> anywhere you wanna go.
         </div>
@@ -44,7 +44,7 @@ function Intro1() {
         ref={ref(1)}
         className="w-full h-[100vh] flex flex-col justify-center items-center"
       >
-        <div className={`${robotoBold.className} text-5xl mb-8 text-center`}>
+        <div className={`${robotoBold.className} text-6xl mb-8 text-center`}>
           You like it?
           <br />
           Let's get started.

@@ -6,7 +6,7 @@ export default function SideMenu() {
   const content =
     "pl-2 text-sm my-1 py-1 hover:text-green-600 hover:cursor-pointer";
   return (
-    <div className="pt-[60px] w-[270px] h-[100vh] shadow-md fixed">
+    <div className="pt-[60px] w-[270px] h-[100vh] fixed bg-white border-r">
       <div className="px-5 py-4">
         <div className={title}>Introduction</div>
         <Link href="/doc/getting-started">

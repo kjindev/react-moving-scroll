@@ -6,15 +6,15 @@ export default function Information() {
     <div className="pt-6">
       <div className="py-3">
         <div className={`${robotoBold.className} text-lg`}>
-          ✅ What does Scroll Moving support?
+          ✅ What does Basic Scroll support?
         </div>
         <div className="text-sm py-3 text-justify leading-7">
-          Scroll Moving supports <span className="font-bold">TypeScript</span>.
+          Basic Scroll supports <span className="font-bold">TypeScript</span>.
           You can use it in <span className="font-bold">React</span> and{" "}
           <span className="font-bold">Next.js</span>, and also, it supports{" "}
           <span className="font-bold">CommonJS</span> and{" "}
           <span className="font-bold">ESModule</span>. So, don't hesitate to add
-          Scroll Moving in your project!
+          Basic Scroll in your project!
         </div>
       </div>
       <div className="py-3">
