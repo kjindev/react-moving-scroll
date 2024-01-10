@@ -1,8 +1,7 @@
+import { roboto } from "../util/font";
+import NavBar from "./_components/global/NavBar";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
-
-const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "scroll-moving",
@@ -16,7 +15,10 @@ export default function RootLayout({
 }): JSX.Element {
   return (
     <html>
-      <body className={roboto.className}>{children}</body>
+      <body className={`${roboto.className} text-zinc-900`}>
+        <NavBar />
+        {children}
+      </body>
     </html>
   );
 }
