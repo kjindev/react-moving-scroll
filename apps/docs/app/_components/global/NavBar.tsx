@@ -30,14 +30,18 @@ export default function NavBar() {
       }`}
     >
       <div className="px-5 pc:px-0 w-full pc:w-[1000px] h-[50%] flex justify-between items-center">
-        <Link href="/" className={`${robotoBold.className} text-lg`}>
+        <Link href="/" className={`${robotoBold.className}`}>
           React Moving Scroll
         </Link>
         <div className="text-sm">
           <Link href="/doc/getting-started" className=" hover:text-green-600">
             Doc
           </Link>
-          <a href="/" className="ml-5 hover:text-green-600">
+          <a
+            href="https://github.com/kjindev/react-moving-scroll"
+            target="_blank"
+            className="hover:text-green-600 ml-5"
+          >
             Github
           </a>
         </div>
