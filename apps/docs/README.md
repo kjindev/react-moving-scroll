@@ -40,7 +40,7 @@ pnpm add react-moving-scroll
 
 ## Documentation
 
-https://react-moving-scroll.vercel.app
+🔗 [Documentation Page](https://react-moving-scroll.vercel.app)
 
 <br />
 

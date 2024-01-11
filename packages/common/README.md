@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MONO SYSTEM
 
-## Getting Started
+<br />
 
-First, run the development server:
+<div align="center">
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbrnqjb%2FbtsDkDeWByE%2F8vpR0RikVpQYWbCu4xFfn0%2Fimg.png" width="200" />
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<br />
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Hello, It's **MONO SYSTEM**, the Design System. It uses the Storybook to provide guidelines for UI components. From color, font to UI components, it is designed to give consistency to the design of your project. Look at the shape of the UI components and change the arguments to see how the UI works.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<br />
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Page
 
-## Learn More
+🔗 [MONO SYSTEM Page](https://659f7c5900eff77f8dfb400a-iygkyxeugq.chromatic.com/?path=/docs/docs-introduction--docs)
 
-To learn more about Next.js, take a look at the following resources:
+<br />
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## How to use
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1.  **Check UI Components**
 
-## Deploy on Vercel
+    Check out the various UI components docs provides a complete summary of the components, and you can click on the list of each component for more information.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2.  **Change Arguments**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    You can change arguments in the Control of docs.
+    Check the behavior of the component by changing the content.
+
+<br />
+
+## Development Stacks
+
+This design system was developed using the following development stacks:
+
+- **Core:** Next.js, Storybook
+- **Language:** TypeScript
+- **Package Management:** PNPM
+- **Version Control:** Git
