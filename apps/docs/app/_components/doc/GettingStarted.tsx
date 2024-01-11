@@ -39,14 +39,8 @@ export default function GettingStarted() {
         </div>
         <CodeBox />
         <div className="text-sm py-3 leading-7">
-          Let's check{" "}
-          <Link
-            href="/doc/quick-start"
-            className="font-bold hover:text-green-600"
-          >
-            Quick Start
-          </Link>{" "}
-          for more information that how to use.
+          Let's check <span className="font-bold">Quick Start</span> for more
+          information that how to use.
         </div>
       </div>
     </div>

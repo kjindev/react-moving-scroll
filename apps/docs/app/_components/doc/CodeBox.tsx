@@ -89,6 +89,7 @@ export default function CodeBox() {
           <span>{`Click Me 2`}</span>
           <span className="text-cyan-300">{`</`}</span>
           <span className="text-red-400">{`button`}</span>
+          <span className="text-cyan-300">{`>`}</span>
         </div>
 
         <div>
