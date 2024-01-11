@@ -1,6 +1,7 @@
 import React from "react";
 import { robotoBold } from "../../../util/font";
-
+import Image from "next/image";
+import LinkIcon from "../../assets/open_in_new.svg";
 export default function Information() {
   return (
     <div className="pt-6">
@@ -8,7 +9,7 @@ export default function Information() {
         <div className={`${robotoBold.className} text-lg`}>
           ✅ What does React Moving Scroll support?
         </div>
-        <div className="text-sm py-3 text-justify leading-7">
+        <div className="text-sm py-3 leading-7">
           React Moving Scroll supports{" "}
           <span className="font-bold">TypeScript</span>. You can use it in{" "}
           <span className="font-bold">React</span> and{" "}
@@ -37,13 +38,21 @@ export default function Information() {
       <div className="py-3">
         <div className={`${robotoBold.className} text-lg`}>✅ Link</div>
         <div className="text-sm py-3 text-justify leading-7">
-          Github: <br />
+          <a
+            href="https://github.com/kjindev/react-moving-scroll"
+            target="_blank"
+            className="hover:text-green-600 flex items-center"
+          >
+            <Image src={LinkIcon} alt="icon" />
+            <span className="ml-1">Github Link</span>
+          </a>
           <a
             href="https://www.npmjs.com/package/react-moving-scroll"
             target="_blank"
-            className="hover:text-green-600"
+            className="hover:text-green-600 flex items-center"
           >
-            NPM Package Link
+            <Image src={LinkIcon} alt="icon" />
+            <span className="ml-1">NPM Package Link</span>
           </a>
         </div>
       </div>
