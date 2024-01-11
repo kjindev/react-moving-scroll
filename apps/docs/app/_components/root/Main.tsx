@@ -2,8 +2,8 @@
 
 import { MouseEvent, ReactNode } from "react";
 import { robotoBold } from "../../../util/font";
-import { useScroll } from "scroll-moving";
 import Link from "next/link";
+import { useScroll } from "react-moving-scroll";
 
 export default function Main() {
   return (
@@ -15,24 +15,29 @@ export default function Main() {
 
 function Intro1() {
   const { handleScroll, ref } = useScroll();
-  const list = ["What is SCROLL MOVING?", "Learn More?"];
+  const list = ["What is React Moving Scroll?", "Learn More?"];
 
   return (
     <>
       <div className="w-full h-[100vh] flex flex-col justify-center items-center">
-        <div className={`${robotoBold.className} text-5xl mb-8`}>
-          Scrolling Hook for React.
+        <div
+          className={`${robotoBold.className} text-4xl tab:text-5xl pc:text-6xl text-center mb-8 p-5`}
+        >
+          React Moving Scroll,
+          <br /> Scrolling Hook for React.
         </div>
         <Button onClick={(event) => handleScroll(event, list)}>
-          What is SCROLL MOVING?
+          What is React Moving Scroll?
         </Button>
       </div>
       <div
         ref={ref(0)}
         className="w-full h-[100vh] flex flex-col justify-center items-center"
       >
-        <div className={`${robotoBold.className} text-5xl mb-8 text-center`}>
-          You can scroll smooth,
+        <div
+          className={`${robotoBold.className} text-4xl tab:text-5xl pc:text-6xl mb-8 p-5 text-center`}
+        >
+          You can scroll on smoothly,
           <br /> anywhere you wanna go.
         </div>
         <Button onClick={(event) => handleScroll(event, list)}>
@@ -43,11 +48,15 @@ function Intro1() {
         ref={ref(1)}
         className="w-full h-[100vh] flex flex-col justify-center items-center"
       >
-        <div className={`${robotoBold.className} text-5xl mb-8 text-center`}>
-          Let's Check Document!
+        <div
+          className={`${robotoBold.className} text-4xl tab:text-5xl pc:text-6xl mb-8 p-5 text-center`}
+        >
+          You like it?
+          <br />
+          Let's get started.
         </div>
         <Link href="/doc/getting-started">
-          <Button>Get Started</Button>
+          <Button>Go to Introduction Page</Button>
         </Link>
       </div>
     </>
@@ -64,7 +73,7 @@ function Button({
   return (
     <button
       onClick={onClick}
-      className="bg-sky-600 text-white text-sm px-3 py-2 rounded-xl hover:scale-105"
+      className="bg-zinc-800 text-white text-xs tab:text-sm px-3 py-2 rounded hover:bg-green-600 transition-colors"
     >
       {children}
     </button>

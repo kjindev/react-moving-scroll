@@ -1,7 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./app/**/*.{js,ts,jsx,tsx,mdx}"],
+  sans: ["Roboto"],
   theme: {
+    screens: {
+      pc: "1080px",
+      tab: "850px",
+      "max-tab": { max: "849px" },
+      mobile: "300px",
+    },
     extend: {
       boxShadow: {
         md: "0 2px 4px rgb(0, 0, 0, 0.1), 0 1px 2px rgb(0, 0, 0, 0.1)",
