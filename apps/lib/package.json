@@ -1,6 +1,6 @@
 {
-  "name": "scroll-moving",
-  "version": "0.0.5",
+  "name": "react-moving-scroll",
+  "version": "0.0.1",
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "exports": {
@@ -9,7 +9,7 @@
       "require": "./cjs/index.js"
     }
   },
-  "description": "scroll moving hook",
+  "description": "React scrolling hook",
   "keywords": [
     "react",
     "scroll",
