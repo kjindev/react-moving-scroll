@@ -1,28 +1,60 @@
-## Getting Started
+# React Moving Scroll <img src="https://img.shields.io/badge/version-1.0.1-blue" />
 
-First, run the development server:
+<br />
 
-```bash
-yarn dev
+<div align="center">
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbrnqjb%2FbtsDkDeWByE%2F8vpR0RikVpQYWbCu4xFfn0%2Fimg.png" width="200" />
+</div>
+
+<br />
+
+**React Moving Scroll** is React Hook for making it easy to scroll to some specific contents that you wanna go. You can use it for Navigation Bar, Buttons, or anything you want, for adding smooth scrolling. It would help you as it give you the efficiently function, React Moving Scroll.
+
+<br />
+
+React Moving Scroll supports TypeScript. You can use it in React and Next.js, and also, it supports CommonJS and ESModule. So, don't hesitate to add React Moving Scroll in your project!
+
+<br />
+
+## Installation
+
+To install the latest version, run the following command:
+
+```
+npm install react-moving-scroll
 ```
 
-Open [http://localhost:3001](http://localhost:3001) with your browser to see the result.
+Or if you're using yarn:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+yarn add react-moving-scroll
+```
 
-To create [API routes](https://nextjs.org/docs/app/building-your-application/routing/router-handlers) add an `api/` directory to the `app/` directory with a `route.ts` file. For individual endpoints, create a subfolder in the `api` directory, like `api/hello/route.ts` would map to [http://localhost:3001/api/hello](http://localhost:3001/api/hello).
+Or if you're using pnpm:
 
-## Learn More
+```
+pnpm add react-moving-scroll
+```
 
-To learn more about Next.js, take a look at the following resources:
+<br />
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn/foundations/about-nextjs) - an interactive Next.js tutorial.
+## Documentation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+https://react-moving-scroll.vercel.app
 
-## Deploy on Vercel
+<br />
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_source=github.com&utm_medium=referral&utm_campaign=turborepo-readme) from the creators of Next.js.
+## Development Stacks
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This library was developed using the following development stacks:
+
+- Core: React
+- Language: TypeScript
+- Package Management: NPM
+- Version Control: Git
+
+<br />
+
+## License
+
+React Moving Scroll is MIT Licensed.
