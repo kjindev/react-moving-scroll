@@ -6,23 +6,45 @@ export default function Information() {
     <div className="pt-6">
       <div className="py-3">
         <div className={`${robotoBold.className} text-lg`}>
-          ✅ What does Basic Scroll support?
+          ✅ What does React Moving Scroll support?
         </div>
         <div className="text-sm py-3 text-justify leading-7">
-          Basic Scroll supports <span className="font-bold">TypeScript</span>.
-          You can use it in <span className="font-bold">React</span> and{" "}
+          React Moving Scroll supports{" "}
+          <span className="font-bold">TypeScript</span>. You can use it in{" "}
+          <span className="font-bold">React</span> and{" "}
           <span className="font-bold">Next.js</span>, and also, it supports{" "}
           <span className="font-bold">CommonJS</span> and{" "}
           <span className="font-bold">ESModule</span>. So, don't hesitate to add
-          Basic Scroll in your project!
+          React Moving Scroll in your project!
         </div>
       </div>
       <div className="py-3">
         <div className={`${robotoBold.className} text-lg`}>
-          ✅ Lastest Version?
+          ✅ Lastest Version
         </div>
         <div className="text-sm py-3 text-justify leading-7">
-          The lastest version is 1.0.1.
+          The lastest version is{" "}
+          <span className="bg-zinc-200 rounded">1.0.1</span>, updated on January
+          11.
+        </div>
+      </div>
+      <div className="py-3">
+        <div className={`${robotoBold.className} text-lg`}>✅ License</div>
+        <div className="text-sm py-3 text-justify leading-7">
+          React Moving Scroll is MIT Licensed.
+        </div>
+      </div>
+      <div className="py-3">
+        <div className={`${robotoBold.className} text-lg`}>✅ Link</div>
+        <div className="text-sm py-3 text-justify leading-7">
+          Github: <br />
+          <a
+            href="https://www.npmjs.com/package/react-moving-scroll"
+            target="_blank"
+            className="hover:text-green-600"
+          >
+            NPM Package Link
+          </a>
         </div>
       </div>
     </div>

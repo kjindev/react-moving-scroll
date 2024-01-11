@@ -24,7 +24,7 @@ export default function DocLayout({ children }: { children: React.ReactNode }) {
         {children}
         <footer className="ml-0 tab:ml-[270px] h-[120px] px-10">
           <p className="border-t text-sm flex justify-center items-center h-[120px] text-zinc-500">
-            Basic Scroll
+            React Moving Scroll
           </p>
         </footer>
       </div>

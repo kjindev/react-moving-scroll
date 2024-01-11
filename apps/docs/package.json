@@ -13,8 +13,8 @@
     "next": "^14.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "recoil": "^0.7.7",
-    "scroll-moving": "workspace:^"
+    "react-moving-scroll": "workspace:^",
+    "recoil": "^0.7.7"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^14.0.4",

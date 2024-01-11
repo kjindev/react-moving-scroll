@@ -157,10 +157,14 @@ export default function CodeBox() {
           <code className="text-cyan-300">{`        </`}</code>
           <code className="text-red-400">{`div`}</code>
           <code className="text-cyan-300">{`>`}</code>
-          <div></div>
+        </div>
+
+        <div className="flex flex-wrap">
           <code className="text-purple-300">{`    )`}</code>
           <code className="text-cyan-300">{`;`}</code>
-          <div></div>
+        </div>
+
+        <div className="flex flex-wrap">
           <code className="text-yellow-300">{`}`}</code>
         </div>
       </pre>

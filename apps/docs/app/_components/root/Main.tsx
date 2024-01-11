@@ -2,8 +2,8 @@
 
 import { MouseEvent, ReactNode } from "react";
 import { robotoBold } from "../../../util/font";
-import { useScroll } from "scroll-moving";
 import Link from "next/link";
+import { useScroll } from "react-moving-scroll";
 
 export default function Main() {
   return (
@@ -15,7 +15,7 @@ export default function Main() {
 
 function Intro1() {
   const { handleScroll, ref } = useScroll();
-  const list = ["What is Basic Scroll?", "Learn More?"];
+  const list = ["What is React Moving Scroll?", "Learn More?"];
 
   return (
     <>
@@ -23,11 +23,11 @@ function Intro1() {
         <div
           className={`${robotoBold.className} text-4xl tab:text-5xl pc:text-6xl text-center mb-8 p-5`}
         >
-          Basic Scroll,
+          React Moving Scroll,
           <br /> Scrolling Hook for React.
         </div>
         <Button onClick={(event) => handleScroll(event, list)}>
-          What is Basic Scroll?
+          What is React Moving Scroll?
         </Button>
       </div>
       <div

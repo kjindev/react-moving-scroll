@@ -5,7 +5,7 @@ export default function Page() {
     <div>
       <Main />
       <footer className="bg-zinc-800 text-zinc-100 h-[200px] flex justify-center items-center">
-        Basic Scroll
+        React Moving Scroll
       </footer>
     </div>
   );

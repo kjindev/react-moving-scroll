@@ -31,7 +31,7 @@ export default function NavBar() {
     >
       <div className="w-full pc:w-[1000px] h-[50%] flex justify-between items-center">
         <Link href="/" className={`${robotoBold.className} pl-5 text-lg`}>
-          Basic Scroll
+          React Moving Scroll
         </Link>
         <div className="text-sm">
           <Link
