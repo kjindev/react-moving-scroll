@@ -41,8 +41,8 @@ export const Dropdown = ({ type, withIcon }: Props) => {
                 id="optionItem"
                 className={
                   index + 1 === arrayLength
-                    ? "hover:bg-slate-100 hover:cursor-pointer w-[150px] bg-slate-200 p-2 rounded-b-lg"
-                    : "hover:bg-slate-100 hover:cursor-pointer w-[150px] bg-slate-200 p-2"
+                    ? "hover:bg-zinc-100 hover:cursor-pointer w-[150px] bg-zinc-200 p-2 rounded-b-lg"
+                    : "hover:bg-zinc-100 hover:cursor-pointer w-[150px] bg-zinc-200 p-2"
                 }
               >
                 option{index + 1}

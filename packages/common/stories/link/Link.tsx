@@ -3,7 +3,5 @@ interface Props {
 }
 
 export const Link = ({ children }: Props) => {
-  return (
-    <div className="cursor-pointer text-main hover:text-sub-2">{children}</div>
-  );
+  return <div className="cursor-pointer   hover:text-main">{children}</div>;
 };
