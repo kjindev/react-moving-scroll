@@ -1,6 +1,6 @@
 {
   "name": "react-moving-scroll",
-  "version": "0.0.1",
+  "version": "1.0.2",
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "exports": {
