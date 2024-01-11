@@ -25,7 +25,7 @@ export default function Information() {
         </div>
         <div className="text-sm py-3 text-justify leading-7">
           The lastest version is{" "}
-          <span className="bg-zinc-200 rounded px-1">1.0.2</span>, updated on
+          <span className="bg-zinc-200 rounded px-1">1.0.3</span>, updated on
           January 11.
         </div>
       </div>
