@@ -4,7 +4,7 @@ interface Props {
   children?: string;
 }
 
-export const Tooltip = ({ children }: Props) => {
+export const Tooltip: React.FC<Props> = ({ children }: Props) => {
   const [isHover, setIsHover] = useState(false);
 
   return (

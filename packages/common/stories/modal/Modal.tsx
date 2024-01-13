@@ -1,4 +1,4 @@
-import { Info } from "../assets/Icon";
+import { Info } from "../../assets/Icon";
 
 interface Props {
   withIcon: boolean;
@@ -6,10 +6,10 @@ interface Props {
   children?: string;
 }
 
-export const Modal = ({ children, withIcon, withButton }: Props) => {
+const Modal: React.FC<Props> = ({ children, withIcon, withButton }: Props) => {
   return (
     <div className="w-[270px] flex flex-col px-7 py-5 rounded-xl bg-white shadow-md">
-      {withIcon && <Info width="50" height="50" fill="fill-main" />}
+      {withIcon && <Info width="50" height="50" className="fill-main" />}
       <div className="mt-4 text-xl font-bold">Modal Title</div>
       <div className="text-gray-2 leading-6 my-5 font-extralight">
         {children}
@@ -29,3 +29,5 @@ const Button = () => {
     <div className={`${defaultStyle} ${bgColor} ${color} ${cursor}`}>Check</div>
   );
 };
+
+export default Modal;

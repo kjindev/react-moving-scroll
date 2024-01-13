@@ -1,16 +1,24 @@
-import AddCircle from "../assets/Icon";
+import { MouseEvent, ReactNode } from "react";
+import { AddCircle } from "../../assets/Icon";
 
 interface Props {
+  children: ReactNode;
+  onClick?: (event: MouseEvent<HTMLElement>) => void;
   type?: string;
-  Destructive?: boolean;
-  size: "small" | "medium" | "large";
-  children?: string;
+  size?: "small" | "medium" | "large";
+  className?: string;
 }
 
-export const Button = ({ type, size, Destructive, children }: Props) => {
+const Button: React.FC<Props> = ({
+  children,
+  onClick,
+  type,
+  size,
+  className,
+}: Props) => {
   const fontSize = {
     small: "text-xs",
-    medium: "text-base",
+    medium: "text-sm",
     large: "text-xl",
   };
 
@@ -20,26 +28,23 @@ export const Button = ({ type, size, Destructive, children }: Props) => {
     large: "18",
   };
 
-  const defaultStyle = "flex items-center px-3 py-2 rounded-xl";
-  const bgColor = Destructive ? "bg-gray-1" : "bg-main";
-  const color = Destructive ? "text-gray-2" : "text-white";
-  const cursor = Destructive ? "cursor-default" : "cursor-pointer";
-  const iconColor = Destructive ? "fill-gray-2" : "fill-white";
-
   return (
-    <div
-      className={`${defaultStyle} ${bgColor} ${color} ${fontSize[size]} ${cursor}`}
+    <button
+      onClick={onClick}
+      className={`${className} bg-zinc-800 text-white ${
+        fontSize[size || "medium"]
+      } tab:text-sm px-3 py-2 rounded hover:bg-green-600 transition-colors flex items-center`}
     >
       {(type === "WithIcon" || type === "IconOnly") && (
         <AddCircle
-          width={svgSize[size]}
-          height={svgSize[size]}
-          fill={iconColor}
+          width={svgSize[size || "medium"]}
+          height={svgSize[size || "medium"]}
+          className={`fill-white ${type === "WithIcon" ? "mr-1" : ""}`}
         />
       )}
-      {type !== "IconOnly" && (
-        <span className={type === "WithIcon" ? "pl-1" : ""}>{children}</span>
-      )}
-    </div>
+      {type !== "IconOnly" && children}
+    </button>
   );
 };
+
+export default Button;

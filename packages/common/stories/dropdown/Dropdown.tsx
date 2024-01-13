@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { Expand, ExpandLess } from "../assets/Icon";
+import { Expand, ExpandLess } from "../../assets/Icon";
 
 interface Props {
   type?: string;
   withIcon?: boolean;
 }
 
-export const Dropdown = ({ type, withIcon }: Props) => {
+export const Dropdown: React.FC<Props> = ({ type, withIcon }: Props) => {
   const arrayLength = 4;
   const [isHover, setIsHover] = useState(false);
 
@@ -26,9 +26,9 @@ export const Dropdown = ({ type, withIcon }: Props) => {
               {withIcon && (
                 <div className="flex items-center">
                   {isHover ? (
-                    <ExpandLess width="15" height="15" fill="fill-black" />
+                    <ExpandLess width="15" height="15" className="fill-black" />
                   ) : (
-                    <Expand width="15" height="15" fill="fill-black" />
+                    <Expand width="15" height="15" className="fill-black" />
                   )}
                 </div>
               )}
@@ -64,7 +64,7 @@ export const Dropdown = ({ type, withIcon }: Props) => {
               <div>Select Here</div>
               {withIcon && (
                 <div className="flex items-center">
-                  <Expand width="15" height="15" fill="fill-gray-2" />
+                  <Expand width="15" height="15" className="fill-gray-2" />
                 </div>
               )}
             </div>

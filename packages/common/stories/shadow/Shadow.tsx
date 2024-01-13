@@ -3,7 +3,7 @@ interface Props {
   colored: boolean;
 }
 
-export const Shadow = ({ type, colored }: Props) => {
+export const Shadow: React.FC<Props> = ({ type, colored }: Props) => {
   const shadowType = (type: string) => {
     if (type === "Default") {
       if (colored) {

@@ -1,4 +1,4 @@
-import AddCircle from "../assets/Icon";
+import { AddCircle } from "../../assets/Icon";
 
 interface Props {
   type: string;
@@ -6,7 +6,11 @@ interface Props {
   children?: string;
 }
 
-export const Alert = ({ type, withButton, children }: Props) => {
+export const Alert: React.FC<Props> = ({
+  type,
+  withButton,
+  children,
+}: Props) => {
   const defaultStyle =
     "w-[300px] flex justify-between items-center px-4 py-3 rounded-lg";
 
@@ -26,7 +30,7 @@ export const Alert = ({ type, withButton, children }: Props) => {
     <div className={`${defaultStyle} ${color(type)}`}>
       {children}
       {withButton && (
-        <AddCircle width="15" height="15" fill={iconColor(type)} />
+        <AddCircle width="15" height="15" className={iconColor(type)} />
       )}
     </div>
   );
