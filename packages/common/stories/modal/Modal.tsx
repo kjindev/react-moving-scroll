@@ -6,7 +6,7 @@ interface Props {
   children?: string;
 }
 
-export const Modal = ({ children, withIcon, withButton }: Props) => {
+const Modal: React.FC<Props> = ({ children, withIcon, withButton }: Props) => {
   return (
     <div className="w-[270px] flex flex-col px-7 py-5 rounded-xl bg-white shadow-md">
       {withIcon && <Info width="50" height="50" className="fill-main" />}
@@ -29,3 +29,5 @@ const Button = () => {
     <div className={`${defaultStyle} ${bgColor} ${color} ${cursor}`}>Check</div>
   );
 };
+
+export default Modal;

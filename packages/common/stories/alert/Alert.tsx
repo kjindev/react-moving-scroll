@@ -6,7 +6,11 @@ interface Props {
   children?: string;
 }
 
-export const Alert = ({ type, withButton, children }: Props) => {
+export const Alert: React.FC<Props> = ({
+  type,
+  withButton,
+  children,
+}: Props) => {
   const defaultStyle =
     "w-[300px] flex justify-between items-center px-4 py-3 rounded-lg";
 
