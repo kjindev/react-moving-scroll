@@ -1,6 +1,6 @@
 import React from "react";
 import { robotoBold } from "../../../util/font";
-import CodeBox from "./CodeBox";
+import CodeBox from "./CodeBlock.tsx";
 
 export default function QuickStart() {
   return (
