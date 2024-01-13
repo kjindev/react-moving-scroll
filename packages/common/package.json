@@ -1,6 +1,7 @@
 {
-  "name": "common",
+  "name": "@repo/common",
   "version": "0.1.0",
+  "exports": "./app/index.ts",
   "private": true,
   "scripts": {
     "dev": "next dev",

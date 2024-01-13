@@ -1,24 +1,16 @@
 "use client";
 
-import { MouseEvent, ReactNode } from "react";
-import { robotoBold } from "../../../util/font";
 import Link from "next/link";
+import { robotoBold } from "../../../util/font";
 import { useScroll } from "react-moving-scroll";
+import { Button } from "@repo/common";
 
 export default function Main() {
-  return (
-    <div className="w-full">
-      <Intro1 />
-    </div>
-  );
-}
-
-function Intro1() {
   const { handleScroll, ref } = useScroll();
   const list = ["What is React Moving Scroll?", "Learn More?"];
 
   return (
-    <>
+    <div className="w-full">
       <div className="w-full h-[100vh] flex flex-col justify-center items-center">
         <div
           className={`${robotoBold.className} text-4xl tab:text-5xl pc:text-6xl text-center mb-8 p-5`}
@@ -59,23 +51,6 @@ function Intro1() {
           <Button>Go to Introduction Page</Button>
         </Link>
       </div>
-    </>
-  );
-}
-
-function Button({
-  children,
-  onClick,
-}: {
-  children: ReactNode;
-  onClick?: (event: MouseEvent<HTMLElement>) => void;
-}) {
-  return (
-    <button
-      onClick={onClick}
-      className="bg-zinc-800 text-white text-xs tab:text-sm px-3 py-2 rounded hover:bg-green-600 transition-colors"
-    >
-      {children}
-    </button>
+    </div>
   );
 }

@@ -25,7 +25,7 @@ export default function NavBar() {
 
   return (
     <div
-      className={`z-[100] w-full h-[120px] tab:h-[60px] fixed flex flex-col justify-center items-center ${
+      className={`z-[100] w-full h-[120px] tab:h-[60px] fixed flex flex-col tab:justify-center items-center ${
         path === "/" ? "" : "bg-white shadow"
       }`}
     >

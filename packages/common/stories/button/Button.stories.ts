@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Button } from "./Button";
+import Button from "./Button";
 
-const meta = {
+const meta: Meta = {
   title: "Components/Button",
   component: Button,
   parameters: {
@@ -14,21 +14,13 @@ const meta = {
     size: {
       description: "Button의 크기를 결정합니다.",
       table: {
-        defaultValue: { summary: "small" },
+        defaultValue: { summary: "medium" },
       },
-      defaultValue: "small",
-    },
-    Destructive: {
-      description: "Button의 사용 가능 여부를 결정합니다.",
-      table: {
-        type: { summary: "boolean" },
-        defaultValue: { summary: false },
-      },
-      defaultValue: false,
+      defaultValue: "medium",
     },
   },
   args: {
-    size: "small",
+    size: "medium",
   },
   tags: ["autodocs"],
 } satisfies Meta<typeof Button>;
@@ -39,7 +31,6 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     children: "Button",
-    Destructive: false,
   },
 };
 

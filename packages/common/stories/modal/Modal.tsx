@@ -1,4 +1,4 @@
-import { Info } from "../assets/Icon";
+import { Info } from "../../assets/Icon";
 
 interface Props {
   withIcon: boolean;

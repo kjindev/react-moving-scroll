@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Expand, ExpandLess } from "../assets/Icon";
+import { Expand, ExpandLess } from "../../assets/Icon";
 
 interface Props {
   type?: string;

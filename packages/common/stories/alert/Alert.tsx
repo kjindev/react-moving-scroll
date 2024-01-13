@@ -1,4 +1,4 @@
-import AddCircle from "../assets/Icon";
+import AddCircle from "../../assets/Icon";
 
 interface Props {
   type: string;
