@@ -26,9 +26,9 @@ export const Dropdown = ({ type, withIcon }: Props) => {
               {withIcon && (
                 <div className="flex items-center">
                   {isHover ? (
-                    <ExpandLess width="15" height="15" fill="fill-black" />
+                    <ExpandLess width="15" height="15" className="fill-black" />
                   ) : (
-                    <Expand width="15" height="15" fill="fill-black" />
+                    <Expand width="15" height="15" className="fill-black" />
                   )}
                 </div>
               )}
@@ -64,7 +64,7 @@ export const Dropdown = ({ type, withIcon }: Props) => {
               <div>Select Here</div>
               {withIcon && (
                 <div className="flex items-center">
-                  <Expand width="15" height="15" fill="fill-gray-2" />
+                  <Expand width="15" height="15" className="fill-gray-2" />
                 </div>
               )}
             </div>

@@ -1,4 +1,4 @@
-import AddCircle from "../../assets/Icon";
+import { AddCircle } from "../../assets/Icon";
 
 interface Props {
   type: string;
@@ -26,7 +26,7 @@ export const Alert = ({ type, withButton, children }: Props) => {
     <div className={`${defaultStyle} ${color(type)}`}>
       {children}
       {withButton && (
-        <AddCircle width="15" height="15" fill={iconColor(type)} />
+        <AddCircle width="15" height="15" className={iconColor(type)} />
       )}
     </div>
   );

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Modal } from "./Modal";
 
-const meta = {
+const meta: Meta = {
   title: "Components/Modal",
   component: Modal,
   parameters: {
