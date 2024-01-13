@@ -5,7 +5,7 @@ interface Props {
   children?: string;
 }
 
-export const Label: React.FC<Props> = ({ type, children }: Props) => {
+const Label: React.FC<Props> = ({ type, children }: Props) => {
   return (
     <div className="flex items-center text-sm px-3 py-2 rounded-xl bg-sub-2 text-main">
       {type === "WithIcon" && (
@@ -17,3 +17,5 @@ export const Label: React.FC<Props> = ({ type, children }: Props) => {
     </div>
   );
 };
+
+export default Label;

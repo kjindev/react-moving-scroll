@@ -6,13 +6,9 @@ interface Props {
   children?: string;
 }
 
-export const Alert: React.FC<Props> = ({
-  type,
-  withButton,
-  children,
-}: Props) => {
+const Alert: React.FC<Props> = ({ type, withButton, children }: Props) => {
   const defaultStyle =
-    "w-[300px] flex justify-between items-center px-4 py-3 rounded-lg";
+    "w-[300px] flex justify-between items-center px-4 py-3 rounded";
 
   const color = (type: string) => {
     if (type === "Default") return "bg-sub-2 text-main";
@@ -35,3 +31,5 @@ export const Alert: React.FC<Props> = ({
     </div>
   );
 };
+
+export default Alert;

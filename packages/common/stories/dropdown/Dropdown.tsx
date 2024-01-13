@@ -6,7 +6,7 @@ interface Props {
   withIcon?: boolean;
 }
 
-export const Dropdown: React.FC<Props> = ({ type, withIcon }: Props) => {
+const Dropdown: React.FC<Props> = ({ type, withIcon }: Props) => {
   const arrayLength = 4;
   const [isHover, setIsHover] = useState(false);
 
@@ -76,3 +76,5 @@ export const Dropdown: React.FC<Props> = ({ type, withIcon }: Props) => {
     return <div></div>;
   }
 };
+
+export default Dropdown;

@@ -4,7 +4,7 @@ interface Props {
   children?: string;
 }
 
-export const Tooltip: React.FC<Props> = ({ children }: Props) => {
+const Tooltip: React.FC<Props> = ({ children }: Props) => {
   const [isHover, setIsHover] = useState(false);
 
   return (
@@ -28,3 +28,5 @@ export const Tooltip: React.FC<Props> = ({ children }: Props) => {
     </div>
   );
 };
+
+export default Tooltip;

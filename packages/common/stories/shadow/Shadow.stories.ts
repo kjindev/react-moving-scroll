@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Shadow } from "./Shadow";
+import Shadow from "./Shadow";
 
 const meta: Meta = {
   title: "Components/Shadow",
