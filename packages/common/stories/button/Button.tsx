@@ -6,9 +6,16 @@ interface Props {
   onClick?: (event: MouseEvent<HTMLElement>) => void;
   type?: string;
   size?: "small" | "medium" | "large";
+  className?: string;
 }
 
-const Button: React.FC<Props> = ({ children, onClick, type, size }: Props) => {
+const Button: React.FC<Props> = ({
+  children,
+  onClick,
+  type,
+  size,
+  className,
+}: Props) => {
   const fontSize = {
     small: "text-xs",
     medium: "text-sm",
@@ -24,7 +31,7 @@ const Button: React.FC<Props> = ({ children, onClick, type, size }: Props) => {
   return (
     <button
       onClick={onClick}
-      className={`bg-zinc-800 text-white ${
+      className={`${className} bg-zinc-800 text-white ${
         fontSize[size || "medium"]
       } tab:text-sm px-3 py-2 rounded hover:bg-green-600 transition-colors flex items-center`}
     >

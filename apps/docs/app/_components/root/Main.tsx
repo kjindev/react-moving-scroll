@@ -32,7 +32,11 @@ export default function Main() {
           You can scroll on smoothly,
           <br /> anywhere you wanna go.
         </div>
-        <Button onClick={(event) => handleScroll(event, list)}>
+        <Button
+          //   className="bg-zinc-800 text-white
+          //  tab:text-sm px-3 py-2 rounded hover:bg-green-600 transition-colors flex items-center"
+          onClick={(event) => handleScroll(event, list)}
+        >
           Learn More?
         </Button>
       </div>
