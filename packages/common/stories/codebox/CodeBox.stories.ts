@@ -8,16 +8,16 @@ const meta: Meta = {
     // controls: { exclude: ["children", "type"] },
     layout: "centered",
     componentSubtitle:
-      "CodeBox는 사용자와의 상호작용을 유도하고, 특정 액션을 트리거하기 위해 사용하는 컴포넌트입니다.",
+      "CodeBox는 코드의 형식을 보존하고 시각적으로 강조할 수 있도록 돕는 컴포넌트입니다.",
   },
   argTypes: {
-    // size: {
-    //   description: "CodeBox의 크기를 결정합니다.",
-    //   table: {
-    //     defaultValue: { summary: "medium" },
-    //   },
-    //   defaultValue: "medium",
-    // },
+    children: {
+      description: "Label의 내용입니다.",
+    },
+    className: {
+      description: "className을 결정합니다.",
+      defaultValue: "",
+    },
   },
   args: {
     // size: "medium",

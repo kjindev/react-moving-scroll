@@ -16,7 +16,7 @@ const Dropdown: React.FC<Props> = ({ type, withIcon }: Props) => {
         <div id="selectBox">
           <div
             id="label"
-            className={`w-[150px] bg-sub-2 px-3 py-2 hover:cursor-pointer ${
+            className={`w-[150px] bg-zinc-200 px-3 py-2 hover:cursor-pointer ${
               isHover ? " rounded-t-lg" : "rounded-lg"
             }`}
             onClick={() => setIsHover(!isHover)}
@@ -54,7 +54,7 @@ const Dropdown: React.FC<Props> = ({ type, withIcon }: Props) => {
     );
   } else if (type === "Destructive") {
     return (
-      <div className="text-sm h-[300px] flex items-center relative">
+      <div className="cursor-default text-sm h-[300px] flex items-center relative">
         <div id="selectBox">
           <div
             id="label"

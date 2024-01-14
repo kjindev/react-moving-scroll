@@ -52,7 +52,7 @@ The **open-source** was developed using the following development stacks:
 - Core: React
 - Language: TypeScript
 
-Do you want to see more details? Please visit here. 🔗 [Repository of open-source](https://github.com/kjindev/react-moving-scroll/tree/main/apps/lib)
+Do you want to see more details? Please visit here. 🔗 [Repository of open-source](https://github.com/kjindev/react-moving-scroll/tree/develop/apps/open-source)
 
 <br />
 

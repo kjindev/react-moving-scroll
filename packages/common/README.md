@@ -1,4 +1,4 @@
-# COMMON
+# DESIGN SYSTEM
 
 <br />
 
@@ -14,7 +14,7 @@ Hello, It's **COMMON**, the Design System. It uses the Storybook to provide guid
 
 ## Page
 
-🔗 [COMMON DESIGN SYSTEM](https://659f7c5900eff77f8dfb400a-iygkyxeugq.chromatic.com/?path=/docs/docs-introduction--docs)
+🔗 [DESIGN SYSTEM](https://659f7c5900eff77f8dfb400a-iygkyxeugq.chromatic.com/?path=/docs/docs-introduction--docs)
 
 <br />
 
