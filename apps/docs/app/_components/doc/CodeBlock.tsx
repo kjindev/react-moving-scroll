@@ -1,7 +1,9 @@
-export default function CodeBox() {
+import { CodeBox } from "@repo/common";
+
+export default function CodeBlock() {
   return (
-    <div>
-      <pre className="text-sm bg-zinc-800 text-zinc-100 font-light px-5 py-4 rounded-xl leading-7 overflow-x-scroll">
+    <CodeBox className="leading-7 max-tab:overflow-x-scroll">
+      <pre>
         <div>
           <span className="text-cyan-300 italic">{`import `}</span>
           <span className="text-yellow-300">{`{ `}</span>
@@ -168,6 +170,6 @@ export default function CodeBox() {
           <span className="text-yellow-300">{`}`}</span>
         </div>
       </pre>
-    </div>
+    </CodeBox>
   );
 }

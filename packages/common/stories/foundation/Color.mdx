@@ -4,6 +4,8 @@ import { Canvas, Meta, ColorPalette, ColorItem } from "@storybook/blocks";
 
 # Color
 
+MONO SYSTEM의 색상은 Tailwind CSS에 정의되어 있는 GREEN, ZINC 색상을 기준으로 합니다.
+
 <br />
 
 ## OVERVIEW
@@ -14,38 +16,16 @@ import { Canvas, Meta, ColorPalette, ColorItem } from "@storybook/blocks";
     title="MAIN COLOR"
     subtitle="메인컬러"
     colors={{
-      GREEN: "#16a34a",
+      GREEN600: "#16a34a",
     }}
   />
   <ColorItem
     title="SUB COLOR"
     subtitle="보조컬러"
     colors={{
-      GREEN2: "#85d4a2",
-      GREEN3: "#bcebcc",
+      ZINC100: "#f4f4f5",
+      ZINC200: "#e4e4e7",
+      ZINC800: "#27272a",
     }}
   />
-  <ColorItem
-    title="ERROR & DELETE"
-    subtitle="에러 및 삭제 컬러"
-    colors={{ RED: "#F86B68" }}
-  />
-</ColorPalette>
-
-## LIGHT MODE
-
-<br />
-
-<ColorPalette>
-  <ColorItem title="BACKGROUND" colors={{ COLOR: "#ffffff" }} />
-  <ColorItem title="TEXT" colors={{ COLOR: "#18181b" }} />
-</ColorPalette>
-
-## DARK MODE
-
-<br />
-
-<ColorPalette>
-  <ColorItem title="BACKGROUND" colors={{ COLOR: "#27272a" }} />
-  <ColorItem title="TEXT" colors={{ COLOR: "#f4f4f5" }} />
 </ColorPalette>
