@@ -50,8 +50,6 @@ This library was developed using the following development stacks:
 
 - Core: React
 - Language: TypeScript
-- Package Management: NPM
-- Version Control: Git
 
 <br />
 

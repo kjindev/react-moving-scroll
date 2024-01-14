@@ -1,6 +1,6 @@
 import React from "react";
 import { robotoBold } from "../../../util/font";
-import CodeBox from "./CodeBlock";
+import CodeBlock from "./CodeBlock";
 
 export default function QuickStart() {
   return (
@@ -10,7 +10,7 @@ export default function QuickStart() {
           ✅ How to start?
         </div>
         <div className="text-sm py-3 text-justify">
-          <CodeBox />
+          <CodeBlock />
           <div className="py-3 leading-7">
             Import<span className="font-bold"> useScroll</span> and get
             <span className="font-bold"> handleScroll</span> and

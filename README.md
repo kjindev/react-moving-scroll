@@ -10,11 +10,11 @@
 
 The **react-moving-scroll** is the React Hook for making it easy to scroll to some specific contents that you wanna go. You can use it for Navigation Bar, Buttons, or anything you want, for adding smooth scrolling. It would help you as it give you the efficiently function, React Moving Scroll.
 
-This is a Monorepo project for react-moving-scroll library. In this repository, there are 3 projects, **lib**, **docs** and **common**. A brief description of the structure of this project is as follows.
+This is a Monorepo project for react-moving-scroll library. In this repository, there are 3 projects, **open-source**, **docs** and **common**. A brief description of the structure of this project is as follows.
 
 ```
 ├── apps
-│   ├── lib
+│   ├── open-source
 │   └── docs
 ├── packages
 │   ├── common
@@ -27,7 +27,7 @@ This is a Monorepo project for react-moving-scroll library. In this repository, 
 └── tsconfig.json
 ```
 
-1. The **lib** is a project for publishing react-moving-scroll on package. It contains code related to react-moving-scroll hook, for building the module.
+1. The **open-source** is a project for publishing react-moving-scroll on package. It contains code related to react-moving-scroll hook, for building the module.
 
 2. The **docs** is a project for making documentation page for react-moving-scroll. It contains code for publishing web page, made by Next.js.
 
@@ -35,24 +35,24 @@ This is a Monorepo project for react-moving-scroll library. In this repository, 
 
 <br />
 
+## Development Stacks
+
 The root dev stacks are as follows.
 
 - Turborepo, Next.js
 - TypeScript
-- PNPM Workplace
+- PNPM Workspace
 
 <br />
 
-## 1. lib
+## 1. open-source
 
-The **lib** was developed using the following development stacks:
+The **open-source** was developed using the following development stacks:
 
 - Core: React
 - Language: TypeScript
-- Package Management: NPM
-- Version Control: Git
 
-Do you want to see more details? Please visit here. 🔗 [Repository of lib](https://github.com/kjindev/react-moving-scroll/tree/main/apps/lib)
+Do you want to see more details? Please visit here. 🔗 [Repository of open-source](https://github.com/kjindev/react-moving-scroll/tree/main/apps/lib)
 
 <br />
 
@@ -62,8 +62,6 @@ The **docs** was developed using the following development stacks:
 
 - Core: Next.js
 - Language: TypeScript
-- Package Management: PNPM
-- Version Control: Git
 
 Do you want to see more details? Please visit here. 🔗 [Repository of docs](https://github.com/kjindev/react-moving-scroll/tree/main/apps/docs)
 
@@ -75,7 +73,5 @@ The **common** was developed using the following development stacks:
 
 - Core: Next.js, Storybook
 - Language: TypeScript
-- Package Management: PNPM
-- Version Control: Git
 
 Do you want to see more details? Please visit here. 🔗 [Repository of common](https://github.com/kjindev/react-moving-scroll/tree/main/packages/common)
