@@ -1,4 +1,3 @@
-export { default as Alert } from "../stories/alert/Alert";
 export { default as Button } from "../stories/button/Button";
 export { default as CodeBox } from "../stories/codebox/CodeBox";
 export { default as Dropdown } from "../stories/dropdown/Dropdown";
