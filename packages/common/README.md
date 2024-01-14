@@ -1,4 +1,4 @@
-# MONO SYSTEM
+# DESIGN SYSTEM
 
 <br />
 
@@ -8,13 +8,13 @@
 
 <br />
 
-Hello, It's **MONO SYSTEM**, the Design System. It uses the Storybook to provide guidelines for UI components. From color, font to UI components, it is designed to give consistency to the design of your project. Look at the shape of the UI components and change the arguments to see how the UI works.
+Hello, It's **COMMON**, the Design System. It uses the Storybook to provide guidelines for UI components. From color, font to UI components, it is designed to give consistency to the design of your project. Look at the shape of the UI components and change the arguments to see how the UI works.
 
 <br />
 
 ## Page
 
-🔗 [MONO SYSTEM Page](https://659f7c5900eff77f8dfb400a-iygkyxeugq.chromatic.com/?path=/docs/docs-introduction--docs)
+🔗 [DESIGN SYSTEM](https://659f7c5900eff77f8dfb400a-iygkyxeugq.chromatic.com/?path=/docs/docs-introduction--docs)
 
 <br />
 
@@ -37,5 +37,3 @@ This design system was developed using the following development stacks:
 
 - **Core:** Next.js, Storybook
 - **Language:** TypeScript
-- **Package Management:** PNPM
-- **Version Control:** Git

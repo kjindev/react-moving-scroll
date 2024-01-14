@@ -7,9 +7,9 @@ interface Props {
 
 const Label: React.FC<Props> = ({ type, children }: Props) => {
   return (
-    <div className="flex items-center text-sm px-3 py-2 rounded-xl bg-sub-2 text-main">
+    <div className="flex items-center text-sm px-2 py-1 rounded-xl bg-zinc-200">
       {type === "WithIcon" && (
-        <AddCircle width="15" height="15" className="fill-main" />
+        <AddCircle width="15" height="15" className="fill-black" />
       )}
       <div className={type === "WithIcon" ? "pl-1 pb-0.5" : "pb-0.5"}>
         {children}

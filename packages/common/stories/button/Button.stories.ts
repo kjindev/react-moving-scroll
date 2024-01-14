@@ -18,6 +18,13 @@ const meta: Meta = {
       },
       defaultValue: "medium",
     },
+    onClick: {
+      description: "Click Event 함수를 결정합니다.",
+    },
+    className: {
+      description: "className을 결정합니다.",
+      defaultValue: "",
+    },
   },
   args: {
     size: "medium",

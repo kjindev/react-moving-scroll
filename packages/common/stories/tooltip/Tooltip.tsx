@@ -19,7 +19,7 @@ const Tooltip: React.FC<Props> = ({ children }: Props) => {
       <div
         className={
           isHover
-            ? "translate-x-[60%] translate-y-[-80%] absolute px-3 py-2 rounded-xl bg-sub-2 text-main text-sm"
+            ? "translate-x-[60%] translate-y-[-80%] absolute px-3 py-2 rounded-xl bg-zinc-800 text-green-600 text-sm"
             : "hidden"
         }
       >

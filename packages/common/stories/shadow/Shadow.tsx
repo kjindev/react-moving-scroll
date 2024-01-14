@@ -7,9 +7,9 @@ const Shadow: React.FC<Props> = ({ type, colored }: Props) => {
   const shadowType = (type: string) => {
     if (type === "Default") {
       if (colored) {
-        return "shadow-md-color";
+        return "shadow-color";
       } else {
-        return "shadow-md";
+        return "shadow";
       }
     } else if (type === "Large") {
       if (colored) {

@@ -1,4 +1,5 @@
 import { Info } from "../../assets/Icon";
+import Button from "../button/Button";
 
 interface Props {
   withIcon: boolean;
@@ -14,19 +15,8 @@ const Modal: React.FC<Props> = ({ children, withIcon, withButton }: Props) => {
       <div className="text-gray-2 leading-6 my-5 font-extralight">
         {children}
       </div>
-      {withButton && <Button />}
+      {withButton && <Button className="self-center">Check</Button>}
     </div>
-  );
-};
-
-const Button = () => {
-  const defaultStyle = "self-center px-3 py-2 rounded-xl text-sm";
-  const bgColor = "bg-main";
-  const color = "text-white";
-  const cursor = "cursor-pointer";
-
-  return (
-    <div className={`${defaultStyle} ${bgColor} ${color} ${cursor}`}>Check</div>
   );
 };
 

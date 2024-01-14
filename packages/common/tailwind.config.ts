@@ -19,10 +19,8 @@ const config: Config = {
         "red-2": "#ff5a57",
       },
       boxShadow: {
-        md: "0 1px 3px 0 rgb(0, 0, 0, 0.1), 0 1px 2px -1px rgb(0, 0, 0, 0.1)",
-        lg: "0 4px 12px rgb(0, 0, 0, 0.1), 0 2px 4px rgb(0, 0, 0, 0.1)",
-        "md-color": "0 1px 3px 0 #16a34a20,0 1px 2px -1px #16a34a20",
-        "lg-color": "0 4px 12px #16a34a20, 0 2px 4px #16a34a20",
+        color: "0 1px 3px 0 #16a34a30,0 1px 2px -1px #16a34a30",
+        "lg-color": "0 10px 15px -3px #16a34a30, 0 4px 6px -4px #16a34a30",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
